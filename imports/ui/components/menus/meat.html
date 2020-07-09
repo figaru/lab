@@ -1,0 +1,18 @@
+<template name="meat">
+    {{#each item in meat_list}}
+    <div class="item">
+        <div class="item-content">
+            <div class="item-heading">{{item.name}}</div>
+
+            <div class="item-subheading">
+                {{#if get_lang "en"}} {{item.en}} {{/if}}
+                {{#if get_lang "pt"}} {{item.pt}} {{/if}}
+            </div>
+            <div class="item-price">
+                {{item.price}}
+            </div>
+        </div>
+        <!-- <div class="item-image"><img src="img/salada.jpg" alt="" class="img-fluid"></div> -->
+    </div>
+    {{/each}}
+</template>
